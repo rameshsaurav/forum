@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7195598521.js" crossorigin="anonymous"></script>
+    <title>Forum | World News</title>
+</head>
+<body>
+    <header>
+        <div class = "container">
+            <div id = "top">
+                <a href = "index.php"><i class="fas fa-chess-rook icon logo"></i><h1>Socrates</h1></a>
+            </div>
+            <nav>
+                <button type="button" class = "button1"><a href="login.php">Log In</a></button>
+                <button type="button" class = "button2"><a href = "signup.php">Sign Up</a></button>
+                <button type="button" class = "button1"><a href="logout.php">Logout</a></button>
+            </nav>
+        </div>
+    </header>
+    <section>
+        <div class="contianer">
+            <nav class = "menu">
+                <ul>
+                    <li>
+                        <a href = "index.php">Home</a>
+                    </li>
+                    <li class = "current">
+                        <a href = "index.php">Forums</a>
+                    </li>
+                    
+                    <li>
+                        <a href = "about.html">About</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <article class = "post">
+                <div class="post-title">
+                    <h1>Hong Kong vigil organizer arrested on Tiananmen anniversary</h1>
+                </div>
+                <div class = "post-description-box">
+                    <p class = "description">
+                        Chinese officials say the country’s rapid economic development in the years since what they call the “political turmoil” of 1989 proves that decisions made at the time were correct.
+                    </p>
+                </div>
+                <div class = "replies">
+                    <h3>Replies</h3>
+                    <div>
+                        <h4>Posted by user8</h4>
+                        <p>The statement doesn't even make sense, as if China is the only country which has ever experienced growth. I don't know how Chinese people can read this and not be like "ok, but doesn't the west have prosperity and political freedom?"
+
+                            Like the whole thing kind of implies that Chinese people are so inferior somehow that they can't do both?</p>
+                    </div>
+                    <div>
+                        <h4>Postes by user9</h4>
+                        <p>
+                        And China’s economic growth is a result of the CCP integrating the Chinese economy into the global market and transitioning away from a planned economy model. The Tiananmen Square protestors weren’t resisting this; they were pushing for political freedom and the institutionalisation of their own civic and democratic activities alongside the new economic freedoms.
+                        </p>
+                    </div>
+                    <div class = "reply-box">
+                        <h4>Leave a Reply</h4>
+                        <form>
+                            <textarea placeholder="post a public reply"></textarea>
+                            <div>
+                                <input type = "submit" id = "rep" value = "reply" onsubmit="return reply()">
+                                <button id = "can">Cancel</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+    <script src="main.js"></script>
+    <footer>
+        <p>Socrates ,Copyright &copy; 2021 </p>
+    </footer>
+</body>
+</html>
+
+    

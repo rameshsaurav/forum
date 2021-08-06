@@ -1,0 +1,329 @@
+/* global */
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgb(15, 15, 15);
+    margin: 0;
+    padding: 0;
+    width: 10   0%;
+    min-width: 400px;
+    
+}
+.container{
+    margin: 0;
+    overflow: hidden;
+}
+    /* icons */
+#comments, #world, #tech{
+    font-size: 30px;
+    color: teal;
+    
+}
+.icon.logo{
+    font-size: 40px;
+    color: rgb(15,82,186);
+    float: left;
+    margin-top: 16px;
+    margin-left: 15px;
+}
+@media (max-width: 768px){
+    header nav, .button1 
+    .button2, .forum-box, .reply-box{
+        text-align: center;
+        display: block;
+        width: fit-content;
+        max-width: 400px;
+        
+    }
+}
+
+/* header*/
+
+header{
+    width: 100%;
+    background: rgb(26, 26, 26);
+    display: inline-block;
+    border-bottom: 3px solid rgb(15,82,186);
+}
+header h1{
+    font-family: 'Merriweather', serif;
+    color: rgb(15,82,186);
+    float: left;
+    margin-top: 14px;
+    margin-bottom: 20px;
+    padding: 10px 10px;
+}
+header #top a{
+    text-decoration: none;
+    color: rgb(15,82,186);
+}
+header nav{
+    float: right;
+    display: inline;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 15px 15px;
+}
+.welcome-text{
+    font-size: 20px;
+    color: rgb(15,82,186);
+    margin: 15px;
+}
+.button1 a {
+    text-decoration: none;
+    color: rgb(15,82,186);
+    font-size: 14px;
+    font-weight: bold;
+}
+.button1 {
+    height: 35px;
+    width: 70px;
+    border: 2px solid rgb(15,82,186);
+    border-radius: 16px;
+    background: none; 
+}
+.button2 a {
+    text-decoration: none;
+    color: rgb(250,250,250);
+    font-size: 14px;
+    font-weight: bold;
+}
+.button2{
+    height: 35px;
+    width: 70px;
+    border: none;
+    border-radius: 16px;
+    background: rgb(15,82,186);
+}
+
+/* section nav */
+section nav{
+    display: inline-block;
+    margin-left: 15px;
+    visibility: visible;
+}
+section li{
+    list-style: none;
+    float: left;
+    background: rgb(26, 26, 26);
+    text-decoration: none;
+    padding: 20px;
+}
+.current a{
+    color: rgb(15,82,186);
+    
+}
+li a:hover{
+    color: rgb(15,82,186);
+}
+/* section forum*/
+
+.forum-title {
+    color: rgb(250,250,250);
+    padding: 20px;
+    margin: 20px;
+}
+.forum-box{
+    display: inline-block;
+    background: rgb(26, 26, 26);
+    margin: 20px;
+    padding: 20px 0 20px 0;
+    border: 2px solid rgb(15,82,186);
+    border-radius: 4px;
+    width: 70%;
+}
+#nposts{
+    font-size: 18px;
+}
+.subforum-title{
+    border-bottom: 1px solid rgb(15,82,186);
+    padding: 0 20px 0 20px;
+}
+.description, .post-title, .post-author .post-description{
+    color: #dddddd;
+    font-size: 16px;
+    padding: 0 20px 0 20px;
+}
+.forum-stats{
+    float: right;
+    padding: 0 20px 0 20px;
+    color: #dddddd;
+    font-size: 12px;
+}
+a{
+    color: #dddddd;
+    text-decoration: none;
+}
+.forum-box , .post-box a:hover{
+    color: rgb(15,82,186);
+    
+}
+/* post-setion */
+.post-box, .post, .author-box, .replies{
+    display: inline-block;
+    background: rgb(26, 26, 26);
+    margin: 20px;
+    padding: 20px 0 20px 0;
+    width: 70%;
+}
+.post-stats{
+    margin-bottom: 10px;
+    float: right;
+    margin-right: 50px;
+    color: #dddddd;
+}
+.post-title{
+    font-size: 20px;
+}
+.post-author{
+    margin-left: 20px;
+    color: #dddddd;
+    margin-top: 25px;
+    font-size: 16px;
+}
+#views{
+    font-size: 20px;
+}
+#reps{
+    font-size: 14px;
+    text-align: center;
+}
+.replies{
+    font-size: 15px;
+    color: #dddddd;
+}
+.reply-box{
+    width: 600px;
+    border: 1px solid rgb(250,250,250);
+    padding: 15px 10px;
+    text-align: center;
+}
+textarea{
+    height: 50px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid rgb(250,250,250);
+    margin-bottom: 10px;
+    resize: none;
+    outline: none;
+    background: rgb(26, 26, 26);
+    color: #dddddd;
+}
+#rep, #can{
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
+#rep{
+    color: #dddddd;
+    background: rgb(15,82,186);
+}
+#can{
+    color: #dddddd;
+    border: 1px solid rgb(250,250,250);
+    background: rgb(26, 26, 26);
+}
+.reply-button{
+    background: rgb(15,82,186);
+    color: rgb(250,250,250);
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    font-size: 20px;
+    width: 20%;
+    height: 30px;
+}
+
+/* login/signup.html */
+
+.login-form , .signup-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    margin-top: 80px;
+    font-size: 16px;
+}
+section .login-container{
+    border: 1px solid gray;
+    margin: 16px;
+    padding: 32px;
+}
+.form_title{
+    margin-bottom: 0;
+    text-align: center;
+    color: rgb(250,250,250);
+    font-size: 25px;
+}
+.form_message-error{
+    text-align: center;
+    color: rgb(219, 9, 9);
+    padding: 5px;
+}
+#msg_error{
+    visibility: hidden;
+}
+.form_input-box{
+    text-align: center;
+    margin: 10px;
+    padding: 5px;
+}
+.form_input{
+    display: block;
+    height: 32px;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+.form_button{
+    display: block;
+    margin: 16px;
+    padding: 5px;
+    background: rgb(15,82,186);
+    color: rgb(250,250,250);
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    font-size: 20px;
+    height: 40px;
+    width: 90%;
+    border-radius: 4px;
+}
+.form_button, .reply-button:hover{
+    background-color: rgb(10, 60, 136);
+}
+.form_button:active{
+    transform: scale(0.99);
+}
+.form_text{
+    text-align: center;
+    margin: 10px;
+    padding: 5px;
+    font-size: 14px;
+}
+.form_link{
+    text-decoration: none;
+    color: rgb(15,82,186);
+}
+.form_link:hover{
+    color: rgb(219, 9, 9);
+    text-decoration: underline;
+}
+/* footer */
+footer{
+    padding: 20px;
+    margin-top: 20px;
+    color:rgb(15,82,186);
+    background: rgb(26, 26, 26);
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 97%;
+    overflow: hidden;
+}
